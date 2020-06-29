@@ -79,7 +79,11 @@ main {
     align-items: center;
     justify-content: center;
 }
-
+@media ( max-width : 768px ) {
+    main {
+        padding-top: 5vh;
+    }
+}
 
 .sessao-apresenta {
     width: 90%;
@@ -105,7 +109,7 @@ main {
 }
 @media ( max-width : 768px ) {
     .apresentacao-img {
-        width: 95%;
+        width: 100%;
     }
 }
 .titulo {
