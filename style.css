@@ -1,0 +1,559 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(to bottom right, #3ed3f7, #f15894);
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 10px 10px #f15894;
+}
+@media ( max-width : 768px ) {
+    header {
+        box-shadow: 0 0px 11px 6px #f15894;
+        width: 100%;
+        position: relative;
+        height: 40vh;
+        flex-direction: column;
+    }
+}
+.caixa-header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media ( max-width : 768px ) {
+    .caixa-header {
+        flex-direction: column;
+    }
+}
+.caixa-logo {
+    width: 5%;
+}
+.logo {
+    width: 100%;
+    cursor: pointer;
+}
+.lista-menu {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+@media ( max-width : 768px ) {
+    .lista-menu {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.item-lista {
+    font-size: 1rem;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;font-family: 'Krona One', sans-serif;
+}
+.item-lista:hover{
+    cursor: pointer;
+    color:  white;
+}
+
+
+main {
+    padding-top: 20vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sessao-apresenta {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+@media ( max-width : 768px ) {
+    .sessao-apresenta {
+        flex-direction: column;
+    }
+} 
+
+.sessao-apresenta:hover {
+    border-bottom: 1px solid #3ed3f7;
+}
+.apresentacao-img {
+    border-radius: 4px;
+}
+.titulo {
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    color: white;
+    text-shadow: #f15894 2px 1px 10px; 
+    font-size: 2rem;
+}
+.texto-apresentacao {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    color: white;
+    text-shadow: #3ed3f7 2px 1px 2px;
+    font-size: 1.5rem;
+}
+.sessao-inico-historia {
+    width: 90%;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+}
+@media ( max-width : 768px ) {
+    .sessao-inico-historia {
+        height: 100%;
+    }
+}
+.sessao-inico-historia:hover {
+    border-bottom: 1px solid #3faae0;
+}
+.parte-sessao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media ( max-width : 768px ) {
+    .parte-sessao {
+        height: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+.parte {
+    width: 26.5%;
+}
+@media ( max-width : 768px ) {
+    .parte {
+        width: 90%;
+        height: 100%;
+    }
+}
+.parte:hover {
+    border-bottom: 1px solid #3ed3f7;
+}
+.parte-centro {
+    width: 26.5%;
+}
+@media ( max-width : 768px ) {
+    .parte-centro {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.parte-centro:hover {
+    border-top: 1px solid #3ed3f7;
+    border-bottom: 1px solid #3ed3f7;
+}
+.imagem-parte {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.texto-historia {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    color: black;
+}
+@media ( max-width : 768px ) {
+    .texto-historia {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+.caixa-album {
+    width: 30%;
+}
+
+.sessao-trajedia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sessao-trajedia:hover {
+    border-bottom: 1px solid #3ed3f7;
+}
+.caixa-trajedia {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.noticia {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media ( max-width : 768px ) {
+    .noticia {
+        height: 100%;
+        flex-direction: column;
+    }
+}
+.img-trajedia {
+    width: 30%;
+    height: 90%;
+    border-radius: 4px;
+}
+@media ( max-width : 768px ) {
+    .img-trajedia {
+        width: 90%;
+    }
+}
+.caixa-texto-trajedia {
+    width: 30vw;
+}
+@media ( max-width : 768px ) {
+    .caixa-texto-trajedia {
+        width: 90%;
+    }
+}
+
+.texto-trajedia {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+.sessao-ator {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-ator:hover {
+    border-bottom: 1px solid #3ed3f7;
+}
+.descricao {
+    width: 90%;
+    text-align: center;
+}
+.texto-descricao {
+    color: white;
+    text-shadow: #3ed3f7 2px 1px 5px;
+}
+.caixa-ator {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.caixa-filmes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+@media ( max-width : 768px ) {
+    .caixa-filmes {
+        height: 120%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.caixa-filme {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+@media ( max-width : 768px ) {
+    .caixa-filme {
+        width: 40%;
+        height: 100%;
+        border: solid 1px 1px 1px 1px ;
+    }
+}
+.caixa-filme:hover{
+    border-top: solid #3ed3f7 1px;
+    border-bottom: solid #3ed3f7 1px;
+    
+}
+.frase-cb {
+    width: 30%;
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: white 2px 1px 1px; 
+    z-index: 1;
+    position: relative;
+    top: 500px;
+    left: 220px;
+}
+@media ( max-width : 768px ) {
+    .frase-cb {
+        width: 55%;
+        font-size: 1rem;
+        top: 245px;
+        left: 35px;
+    }
+}
+
+.img-filme {
+    z-index: 0;
+    width: 100%;
+    height: 35%;
+}
+.resumo-filme {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    color: black;
+    text-align: center;
+}
+.sessao-netflix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-netflix {
+    width: 100%;
+}
+.resumo-netflix {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    color: black;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.sessao-bp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-bp {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-bp:hover{
+    border-bottom: solid #3ed3f7 1px;
+}
+.caixa-info-bp {
+    display: flex;
+    align-items: center;
+}
+@media ( max-width : 768px ) {
+    .caixa-info-bp {
+        flex-direction: column;
+    }
+}
+.texto-bp {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    color: black;
+    font-size: 1.2rem;
+}
+@media ( max-width : 768px ) {
+    .texto-bp {
+        width: 60%;
+    }
+}
+.logo-bp {
+    width: 50%;
+}
+.caixa-img-bp {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media ( max-width : 768px ) {
+    .caixa-img-bp {
+        display: none;
+    }
+}
+.linha-roupas {
+    width: 20%;
+    height: 80%;
+}
+.sessao-recado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-recado {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.atividades-recado {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media ( max-width : 768px ) {
+    .atividades-recado {
+        height: 100%;
+        flex-direction: column;
+    }
+}
+.rb-cb {
+    width: 30%;
+    height: 90%;
+}
+@media ( max-width : 768px ) {
+    .rb-cb {
+        width: 70%;
+    }
+}
+.caixa-texto-recado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media ( max-width : 768px ) {
+    .caixa-texto-recado {
+        width: 70%;
+    }
+}
+.recado {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    text-align: center;
+    color: black;
+    width: 90%;
+}
+footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(to bottom right, #f15894, #3ed3f7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 10px 10px #f15894;
+}
+@media ( max-width : 768px ) {
+    footer {
+        height: 100%;
+    }
+}
+.atividades-footer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.caixa-footer {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.caixa-texto-footer {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: baseline;
+} 
+.texto-footer {
+    padding-left: 5px;
+    color: white;
+    text-shadow: #f15894 2px 1px 1px; 
+}
+.caixa-logos {
+    display: flex;
+    justify-content: space-around;
+}
+@media ( max-width : 768px ) {
+    .caixa-logos {
+    width: 90%;
+    height: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    }
+}
+.link-img {
+    width: 20%;
+}
+@media ( max-width : 768px ) {
+    .link-img {
+        width: 25%;
+    }
+}
+.logo-footer {
+    width: 100%;
+    border-radius: 4px;
+}
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.manu-footer-item {
+    color: white;
+    font-size: 1.3rem;
+    list-style: none;
+}
+.caixa-recado-footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+.recado-footer {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Piedra', cursive;
+    padding-right: 20px;
+    color: white;
+    text-shadow: #f15894 2px 1px 1px; 
+}
