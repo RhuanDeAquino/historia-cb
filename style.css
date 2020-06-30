@@ -86,7 +86,8 @@ main {
 }
 @media ( max-width : 768px ) {
     main {
-        padding-top: 5vh;
+        padding-top: 5.5vh;
+        padding-bottom: 5.5vh;
     }
 }
 
@@ -572,4 +573,9 @@ footer {
     padding-right: 20px;
     color: white;
     text-shadow: #f15894 2px 1px 1px; 
+}
+@media ( max-width : 768px ) {
+    .recado-footer {
+        text-align: center;
+    }
 }
